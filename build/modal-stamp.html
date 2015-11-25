@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Greeting Card</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            .stamp {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                background-size: 500px 1000px;
+                background-image: url(./images/stamp-sprite.png);
+                background-position: 0 0;
+            }
+        </style>
+	</head>
+	<body>
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title text-center">スタンプを選んでください </h4>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal">
+                <div class="form-group" style="margin: 0 5px;">
+                
+                    <label class="radio-inline" style="margin-left: 10px;">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-00.png" checked="checked"><span class="stamp" style="background-position: 0 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-01.png"><span class="stamp" style="background-position: -50px 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-02.png"><span class="stamp" style="background-position: -100px 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-03.png"><span class="stamp" style="background-position: -150px 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-04.png"><span class="stamp" style="background-position: -200px 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-05.png"><span class="stamp" style="background-position: -250px 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-06.png"><span class="stamp" style="background-position: -300px 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-07.png"><span class="stamp" style="background-position: -350px 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-08.png"><span class="stamp" style="background-position: -400px 0;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-09.png"><span class="stamp" style="background-position: -450px 0;"></span>
+                    </label>
+                    
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-10.png"><span class="stamp" style="background-position: 0 -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-11.png"><span class="stamp" style="background-position: -50px -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-12.png"><span class="stamp" style="background-position: -100px -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-13.png"><span class="stamp" style="background-position: -150px -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-14.png"><span class="stamp" style="background-position: -200px -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-15.png"><span class="stamp" style="background-position: -250px -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-16.png"><span class="stamp" style="background-position: -300px -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-17.png"><span class="stamp" style="background-position: -350px -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-18.png"><span class="stamp" style="background-position: -400px -50px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-19.png"><span class="stamp" style="background-position: -450px -50px;"></span>
+                    </label>
+                    
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-20.png"><span class="stamp" style="background-position: 0 -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-21.png"><span class="stamp" style="background-position: -50px -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-22.png"><span class="stamp" style="background-position: -100px -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-23.png"><span class="stamp" style="background-position: -150px -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-24.png"><span class="stamp" style="background-position: -200px -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-25.png"><span class="stamp" style="background-position: -250px -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-26.png"><span class="stamp" style="background-position: -300px -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-27.png"><span class="stamp" style="background-position: -350px -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-28.png"><span class="stamp" style="background-position: -400px -100px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-29.png"><span class="stamp" style="background-position: -450px -100px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-30.png"><span class="stamp" style="background-position: 0 -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-31.png"><span class="stamp" style="background-position: -50px -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-32.png"><span class="stamp" style="background-position: -100px -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-33.png"><span class="stamp" style="background-position: -150px -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-34.png"><span class="stamp" style="background-position: -200px -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-35.png"><span class="stamp" style="background-position: -250px -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-36.png"><span class="stamp" style="background-position: -300px -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-37.png"><span class="stamp" style="background-position: -350px -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-38.png"><span class="stamp" style="background-position: -400px -150px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-39.png"><span class="stamp" style="background-position: -450px -150px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-40.png"><span class="stamp" style="background-position: 0 -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-41.png"><span class="stamp" style="background-position: -50px -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-42.png"><span class="stamp" style="background-position: -100px -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-43.png"><span class="stamp" style="background-position: -150px -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-44.png"><span class="stamp" style="background-position: -200px -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-45.png"><span class="stamp" style="background-position: -250px -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-46.png"><span class="stamp" style="background-position: -300px -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-47.png"><span class="stamp" style="background-position: -350px -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-48.png"><span class="stamp" style="background-position: -400px -200px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-49.png"><span class="stamp" style="background-position: -450px -200px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-50.png"><span class="stamp" style="background-position: 0 -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-51.png"><span class="stamp" style="background-position: -50px -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-52.png"><span class="stamp" style="background-position: -100px -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-53.png"><span class="stamp" style="background-position: -150px -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-54.png"><span class="stamp" style="background-position: -200px -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-55.png"><span class="stamp" style="background-position: -250px -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-56.png"><span class="stamp" style="background-position: -300px -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-57.png"><span class="stamp" style="background-position: -350px -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-58.png"><span class="stamp" style="background-position: -400px -250px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-59.png"><span class="stamp" style="background-position: -450px -250px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-60.png"><span class="stamp" style="background-position: 0 -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-61.png"><span class="stamp" style="background-position: -50px -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-62.png"><span class="stamp" style="background-position: -100px -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-63.png"><span class="stamp" style="background-position: -150px -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-64.png"><span class="stamp" style="background-position: -200px -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-65.png"><span class="stamp" style="background-position: -250px -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-66.png"><span class="stamp" style="background-position: -300px -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-67.png"><span class="stamp" style="background-position: -350px -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-68.png"><span class="stamp" style="background-position: -400px -300px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-69.png"><span class="stamp" style="background-position: -450px -300px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-70.png"><span class="stamp" style="background-position: 0 -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-71.png"><span class="stamp" style="background-position: -50px -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-72.png"><span class="stamp" style="background-position: -100px -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-73.png"><span class="stamp" style="background-position: -150px -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-74.png"><span class="stamp" style="background-position: -200px -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-75.png"><span class="stamp" style="background-position: -250px -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-76.png"><span class="stamp" style="background-position: -300px -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-77.png"><span class="stamp" style="background-position: -350px -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-78.png"><span class="stamp" style="background-position: -400px -350px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-79.png"><span class="stamp" style="background-position: -450px -350px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-80.png"><span class="stamp" style="background-position: 0 -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-81.png"><span class="stamp" style="background-position: -50px -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-82.png"><span class="stamp" style="background-position: -100px -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-83.png"><span class="stamp" style="background-position: -150px -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-84.png"><span class="stamp" style="background-position: -200px -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-85.png"><span class="stamp" style="background-position: -250px -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-86.png"><span class="stamp" style="background-position: -300px -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-87.png"><span class="stamp" style="background-position: -350px -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-88.png"><span class="stamp" style="background-position: -400px -400px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-89.png"><span class="stamp" style="background-position: -450px -400px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-90.png"><span class="stamp" style="background-position: 0 -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-91.png"><span class="stamp" style="background-position: -50px -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-92.png"><span class="stamp" style="background-position: -100px -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-93.png"><span class="stamp" style="background-position: -150px -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-94.png"><span class="stamp" style="background-position: -200px -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-95.png"><span class="stamp" style="background-position: -250px -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-96.png"><span class="stamp" style="background-position: -300px -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-97.png"><span class="stamp" style="background-position: -350px -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-98.png"><span class="stamp" style="background-position: -400px -450px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-99.png"><span class="stamp" style="background-position: -450px -450px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-100.png"><span class="stamp" style="background-position: 0 -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-101.png"><span class="stamp" style="background-position: -50px -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-102.png"><span class="stamp" style="background-position: -100px -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-103.png"><span class="stamp" style="background-position: -150px -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-104.png"><span class="stamp" style="background-position: -200px -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-105.png"><span class="stamp" style="background-position: -250px -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-106.png"><span class="stamp" style="background-position: -300px -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-107.png"><span class="stamp" style="background-position: -350px -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-108.png"><span class="stamp" style="background-position: -400px -500px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-109.png"><span class="stamp" style="background-position: -450px -500px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-110.png"><span class="stamp" style="background-position: 0 -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-111.png"><span class="stamp" style="background-position: -50px -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-112.png"><span class="stamp" style="background-position: -100px -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-113.png"><span class="stamp" style="background-position: -150px -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-114.png"><span class="stamp" style="background-position: -200px -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-115.png"><span class="stamp" style="background-position: -250px -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-116.png"><span class="stamp" style="background-position: -300px -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-117.png"><span class="stamp" style="background-position: -350px -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-118.png"><span class="stamp" style="background-position: -400px -550px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-119.png"><span class="stamp" style="background-position: -450px -550px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-120.png"><span class="stamp" style="background-position: 0 -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-121.png"><span class="stamp" style="background-position: -50px -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-122.png"><span class="stamp" style="background-position: -100px -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-123.png"><span class="stamp" style="background-position: -150px -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-124.png"><span class="stamp" style="background-position: -200px -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-125.png"><span class="stamp" style="background-position: -250px -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-126.png"><span class="stamp" style="background-position: -300px -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-127.png"><span class="stamp" style="background-position: -350px -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-128.png"><span class="stamp" style="background-position: -400px -600px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-129.png"><span class="stamp" style="background-position: -450px -600px;"></span>
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-130.png"><span class="stamp" style="background-position: 0 -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-131.png"><span class="stamp" style="background-position: -50px -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-132.png"><span class="stamp" style="background-position: -100px -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-133.png"><span class="stamp" style="background-position: -150px -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-134.png"><span class="stamp" style="background-position: -200px -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-135.png"><span class="stamp" style="background-position: -250px -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-136.png"><span class="stamp" style="background-position: -300px -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-137.png"><span class="stamp" style="background-position: -350px -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-138.png"><span class="stamp" style="background-position: -400px -650px;"></span>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="js-toolStampType" value="./images/stamp/stamp-139.png"><span class="stamp" style="background-position: -450px -650px;"></span>
+                    </label>
+
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+    </body>
+</html>

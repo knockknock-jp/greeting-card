@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Greeting Card</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            html {
+                overflow-y: scroll;
+            }
+            .progress-background {
+                display: block;
+                background-color: #eee;
+                background-image: url(./images/progress.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        </style>
+	</head>
+	<body style="background-color: #000;">
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="./index.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Greeting Card</a>
+				</div>
+				<div class="collapse navbar-collapse target">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="./create.html">Create</a>
+						</li>
+						<li>
+							<a href="./gallery.html">Gallery</a>
+						</li>
+						<li class="active">
+							<a href="./slideshow.html">Slideshow</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main style="background-color: #000;">
+			<div class="container" style="margin-top: 70px; max-width: 520px;">
+
+                <!--#js-archives-->
+                <div id="js-archives" style="margin-top: 20px;">
+                    <div id="js-archivesCarousel" class="carousel slide" data-ride="carousel">
+                        <!--#js-archivesItems-->
+                        <div id="js-archivesItems" class="carousel-inner" role="listbox">
+                            <div class="js-archivesItem item">
+                                <div class="progress-background" style="position: relative;">
+                                    <img src="./images/loading.png" alt="" class="js-archivesItemImg" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <!--/#js-archivesItems-->
+                        <a class="left carousel-control" href="#js-archivesCarousel" role="button" data-slide="prev" style="background-image: none;">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#js-archivesCarousel" role="button" data-slide="next" style="background-image: none;">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div id="js-archivesData" style="margin-top: 40px;">
+                        <h5 id="js-archivesName" class="text-center" style="color: #ccc;">&nbsp;</h5>
+                        <p id="js-archivesMsg" class="text-center" style="margin-top: 20px;line-height: 2rem;font-size: 1.2rem;color: #ccc;">&nbsp;</p>
+                    </div>
+                </div>
+                <!--/#js-archives-->
+
+			</div>
+		</main>
+
+        <!--#js-modal-->
+		<aside id="js-modal">
+
+            <!--#js-modalGetArchives-->
+			<div class="modal fade" id="js-modalGetArchives" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog modal-sm" role="document">
+					<div id="js-modalGetArchivesConnect" class="modal-content" style="display: none;">
+                        <div class="modal-header">
+							<h4 class="modal-title text-center">Connected...</h4>
+						</div>
+						<div class="modal-body">
+                            <div class="alert alert-info" role="alert" style="margin-bottom: 0;">
+                                <p class="text-center"><span class="glyphicon glyphicon-download-alt" aria-hidden="true">&nbsp;データ取得中</span></p>
+                            </div>
+						</div>
+						<div class="modal-footer"></div>
+					</div>
+					<div id="js-modalGetArchivesFailure" class="modal-content" style="display: none;">
+                        <div class="modal-header">
+							<h4 class="modal-title text-center text-danger">Failure</h4>
+						</div>
+						<div class="modal-body">
+                            <div class="alert alert-danger" role="alert" style="margin-bottom: 0;">
+                                <p class="text-center"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">&nbsp;<span id="js-modalGetArchivesMsg">&nbsp;</span></span></p>
+                            </div>
+						</div>
+						<div class="modal-footer">
+							<a type="button" class="btn btn-default" href="./index.html">Home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!--/#js-modalGetArchives-->
+
+		</aside>
+        <!--/#js-modal-->
+
+		<script src="./js/libs/jquery-1.11.3.min.js"></script>
+		<script src="./js/libs/velocity.min.js"></script>
+		<script src="./js/libs/bootstrap.min.js"></script>
+		<script src="./js/slideshow.min.js"></script>
+	</body>
+</html>
