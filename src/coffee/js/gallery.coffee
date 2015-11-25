@@ -240,7 +240,7 @@ $ ->
         type: "POST"
         dataType: "json"
         cache: false
-        timeout: 1000
+        timeout: 10000
       }).done((data)=>
         if data.code is 0
           @_data = data.data
@@ -537,5 +537,3 @@ $ ->
       }
     }]
   , false
-
-

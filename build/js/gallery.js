@@ -283,7 +283,7 @@ $(function() {
         type: "POST",
         dataType: "json",
         cache: false,
-        timeout: 1000
+        timeout: 10000
       }).done((function(_this) {
         return function(data) {
           if (data.code === 0) {
