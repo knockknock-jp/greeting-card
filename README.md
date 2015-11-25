@@ -18,7 +18,7 @@
 
 1. レスポンシブなインターフェースで、PC及びスマートフォンから利用可能
 2. データはJSON形式でPHPのAPIを通して保存されるため、サーバ※1にアップするだけで利用可能
-3. Bootstrapを利用しているので、(Bootswatch)[http://bootswatch.com/]などを使ってテーマを変える事が容易
+3. Bootstrapを利用しているので、(Bootswatch)[http://bootswatch.com]などを使ってテーマを変える事が容易
 
 ---
 
